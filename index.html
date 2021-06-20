@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Bola 8 Mágica</title>
+
+
+<head>
+    <script type="text/javascript">
+        var answers = [
+            "Es cierto",
+            "Es decididamente así",
+            "Sin duda",
+            "Sí definitivamente",
+            "Puedes confiar en ello",
+            "Como yo lo veo, sí",
+            "Más probable",
+            "Perspectivas buena",
+            "Sí",
+            "Señales que indican sí",
+            "No cuentes con eso",
+            "Mi respuesta es no",
+            "Mis fuentes dicen que no",
+            "No lo veo muy bien",
+            "Muy dudoso",
+            "Respuesta confusa, intenta otra vez",
+            "Pregunta de nuevo más tarde",
+            "Mejor no decirte ahora",
+            "No se puede predecir ahora",
+            "Concéntrate y pregunta otra vez"
+        ];
+
+
+        window.onload = function() {
+            var eight = document.getElementById("ocho");
+            var answer = document.getElementById("respuesta");
+            var eightball = document.getElementById("bola-ocho");
+            var question = document.getElementById("pregunta");
+
+            eightball.addEventListener("click", function() {
+                if (question.value.length < 1) {
+                    alert('Por favor, ingresar una pregunta valida');
+                } else {
+                    eight.innerText = "";
+                    var num = Math.floor(Math.random() * Math.floor(answers.length));
+                    answer.innerText = answers[num];
+                }
+            });
+        };
+    </script>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Bola 8 Mágica</h1>
+        <p id="intro">Pregunta lo que quieras... pero cuidado...</p>
+        <input type="text" id="pregunta" />
+        <div id="bola-ocho" class="bola-ocho">
+            <div class="respuesta">
+                <p id="ocho">8</p>
+                <p id="respuesta"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

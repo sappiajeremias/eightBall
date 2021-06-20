@@ -1,0 +1,54 @@
+h1 {
+    font-weight: 100;
+    font-size: 2.75rem;
+}
+
+#content {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 3px dotted black;
+    text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: 90;
+}
+
+div.bola-ocho {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    margin-top: 70px;
+}
+
+div.respuesta {
+    background-color: White;
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    margin: 19% auto;
+}
+
+p#ocho {
+    font-size: 6em;
+    margin: 13% auto;
+    color: black;
+}
+
+p#respuesta {
+    padding: 23px;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+#pregunta {
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    font-size: 22px;
+}
